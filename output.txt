@@ -1,0 +1,2167 @@
+# Directory Tree:
+├── .aider.tags.cache.v3
+│   ├── cache.db
+│   ├── cache.db-shm
+│   └── cache.db-wal
+├── .git
+├── .github
+│   ├── ISSUE_TEMPLATE
+│   │   └── issue.yml
+│   └── workflows
+│       ├── docker-build-test.yml
+│       ├── docker-release.yml
+│       ├── issues.yml
+│       ├── pages.yml
+│       ├── release.yml
+│       ├── ubuntu-tests.yml
+│       └── windows-tests.yml
+├── .venv
+├── aider
+│   ├── __pycache__
+│   ├── coders
+│   │   ├── __init__.py
+│   │   ├── architect_coder.py
+│   │   ├── architect_prompts.py
+│   │   ├── ask_coder.py
+│   │   ├── ask_prompts.py
+│   │   ├── base_coder.py
+│   │   ├── base_prompts.py
+│   │   ├── chat_chunks.py
+│   │   ├── editblock_coder.py
+│   │   ├── editblock_fenced_coder.py
+│   │   ├── editblock_fenced_prompts.py
+│   │   ├── editblock_func_coder.py
+│   │   ├── editblock_func_prompts.py
+│   │   ├── editblock_prompts.py
+│   │   ├── editor_editblock_coder.py
+│   │   ├── editor_editblock_prompts.py
+│   │   ├── editor_whole_coder.py
+│   │   ├── editor_whole_prompts.py
+│   │   ├── help_coder.py
+│   │   ├── help_prompts.py
+│   │   ├── search_replace.py
+│   │   ├── single_wholefile_func_coder.py
+│   │   ├── single_wholefile_func_prompts.py
+│   │   ├── udiff_coder.py
+│   │   ├── udiff_prompts.py
+│   │   ├── wholefile_coder.py
+│   │   ├── wholefile_func_coder.py
+│   │   ├── wholefile_func_prompts.py
+│   │   └── wholefile_prompts.py
+│   ├── queries
+│   │   ├── README.md
+│   │   ├── tree-sitter-c-tags.scm
+│   │   ├── tree-sitter-c_sharp-tags.scm
+│   │   ├── tree-sitter-cpp-tags.scm
+│   │   ├── tree-sitter-dart-tags.scm
+│   │   ├── tree-sitter-elisp-tags.scm
+│   │   ├── tree-sitter-elixir-tags.scm
+│   │   ├── tree-sitter-elm-tags.scm
+│   │   ├── tree-sitter-go-tags.scm
+│   │   ├── tree-sitter-java-tags.scm
+│   │   ├── tree-sitter-javascript-tags.scm
+│   │   ├── tree-sitter-ocaml-tags.scm
+│   │   ├── tree-sitter-php-tags.scm
+│   │   ├── tree-sitter-python-tags.scm
+│   │   ├── tree-sitter-ql-tags.scm
+│   │   ├── tree-sitter-ruby-tags.scm
+│   │   ├── tree-sitter-rust-tags.scm
+│   │   └── tree-sitter-typescript-tags.scm
+│   ├── resources
+│   │   ├── __init__.py
+│   │   └── model-metadata.json
+│   ├── website
+│   │   ├── _data
+│   │   │   ├── architect.yml
+│   │   │   ├── blame.yml
+│   │   │   ├── code-in-json.yml
+│   │   │   ├── edit_leaderboard.yml
+│   │   │   ├── o1_polyglot_leaderboard.yml
+│   │   │   ├── o1_results.yml
+│   │   │   ├── polyglot_leaderboard.yml
+│   │   │   ├── quant.yml
+│   │   │   ├── qwq.yml
+│   │   │   ├── refactor_leaderboard.yml
+│   │   │   └── sonnet-fine.yml
+│   │   ├── _includes
+│   │   │   ├── blame.md
+│   │   │   ├── code-in-json-benchmark.js
+│   │   │   ├── code-in-json-syntax.js
+│   │   │   ├── get-started.md
+│   │   │   ├── head_custom.html
+│   │   │   ├── help-tip.md
+│   │   │   ├── help.md
+│   │   │   ├── keys.md
+│   │   │   ├── leaderboard.js
+│   │   │   ├── leaderboard_graph.html
+│   │   │   ├── model-warnings.md
+│   │   │   ├── multi-line.md
+│   │   │   ├── nav_footer_custom.html
+│   │   │   ├── python-m-aider.md
+│   │   │   ├── quant-chart.js
+│   │   │   ├── qwq-chart.js
+│   │   │   ├── replit-pipx.md
+│   │   │   └── works-best.md
+│   │   ├── _layouts
+│   │   │   └── redirect.html
+│   │   ├── _posts
+│   │   │   ├── 2023-05-25-ctags.md
+│   │   │   ├── 2023-07-02-benchmarks.md
+│   │   │   ├── 2023-10-22-repomap.md
+│   │   │   ├── 2023-11-06-benchmarks-1106.md
+│   │   │   ├── 2023-11-06-benchmarks-speed-1106.md
+│   │   │   ├── 2023-12-21-unified-diffs.md
+│   │   │   ├── 2024-01-25-benchmarks-0125.md
+│   │   │   ├── 2024-03-08-claude-3.md
+│   │   │   ├── 2024-04-09-gpt-4-turbo.md
+│   │   │   ├── 2024-05-02-browser.md
+│   │   │   ├── 2024-05-13-models-over-time.md
+│   │   │   ├── 2024-05-22-draft.md
+│   │   │   ├── 2024-05-22-linting.md
+│   │   │   ├── 2024-05-22-swe-bench-lite.md
+│   │   │   ├── 2024-05-24-self-assembly.md
+│   │   │   ├── 2024-06-02-main-swe-bench.md
+│   │   │   ├── 2024-07-01-sonnet-not-lazy.md
+│   │   │   ├── 2024-07-25-new-models.md
+│   │   │   ├── 2024-08-14-code-in-json.md
+│   │   │   ├── 2024-08-26-sonnet-seems-fine.md
+│   │   │   ├── 2024-09-12-o1.md
+│   │   │   ├── 2024-09-26-architect.md
+│   │   │   ├── 2024-11-21-quantization.md
+│   │   │   ├── 2024-12-03-qwq.md
+│   │   │   └── 2024-12-21-polyglot.md
+│   │   ├── _sass
+│   │   │   └── custom
+│   │   │       └── custom.scss
+│   │   ├── assets
+│   │   │   ├── icons
+│   │   │   │   ├── android-chrome-192x192.png
+│   │   │   │   ├── android-chrome-384x384.png
+│   │   │   │   ├── apple-touch-icon.png
+│   │   │   │   ├── browserconfig.xml
+│   │   │   │   ├── favicon-16x16.png
+│   │   │   │   ├── favicon-32x32.png
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── mstile-150x150.png
+│   │   │   │   ├── safari-pinned-tab.svg
+│   │   │   │   └── site.webmanifest
+│   │   │   ├── 2024-03-07-claude-3.jpg
+│   │   │   ├── 2024-03-07-claude-3.svg
+│   │   │   ├── 2024-04-09-gpt-4-turbo-laziness.jpg
+│   │   │   ├── 2024-04-09-gpt-4-turbo-laziness.svg
+│   │   │   ├── 2024-04-09-gpt-4-turbo.jpg
+│   │   │   ├── 2024-04-09-gpt-4-turbo.svg
+│   │   │   ├── 2024-07-new-models.jpg
+│   │   │   ├── aider-browser-social.mp4
+│   │   │   ├── aider-square.jpg
+│   │   │   ├── aider.jpg
+│   │   │   ├── architect.jpg
+│   │   │   ├── benchmarks-0125.jpg
+│   │   │   ├── benchmarks-0125.svg
+│   │   │   ├── benchmarks-1106.jpg
+│   │   │   ├── benchmarks-1106.svg
+│   │   │   ├── benchmarks-speed-1106.jpg
+│   │   │   ├── benchmarks-speed-1106.svg
+│   │   │   ├── benchmarks-udiff.jpg
+│   │   │   ├── benchmarks-udiff.svg
+│   │   │   ├── benchmarks.jpg
+│   │   │   ├── benchmarks.svg
+│   │   │   ├── blame.jpg
+│   │   │   ├── browser.jpg
+│   │   │   ├── code-in-json.jpg
+│   │   │   ├── codespaces.jpg
+│   │   │   ├── codespaces.mp4
+│   │   │   ├── copypaste.jpg
+│   │   │   ├── copypaste.mp4
+│   │   │   ├── figure.png
+│   │   │   ├── install.jpg
+│   │   │   ├── install.mp4
+│   │   │   ├── leaderboard.jpg
+│   │   │   ├── linting.jpg
+│   │   │   ├── llms.jpg
+│   │   │   ├── models-over-time.png
+│   │   │   ├── models-over-time.svg
+│   │   │   ├── o1-polyglot.jpg
+│   │   │   ├── prompt-caching.jpg
+│   │   │   ├── quantization.jpg
+│   │   │   ├── qwq.jpg
+│   │   │   ├── robot-ast.png
+│   │   │   ├── robot-flowchart.png
+│   │   │   ├── sample-analytics.jsonl
+│   │   │   ├── sample.aider.conf.yml
+│   │   │   ├── sample.env
+│   │   │   ├── screencast.svg
+│   │   │   ├── screenshot.png
+│   │   │   ├── self-assembly.jpg
+│   │   │   ├── shell-cmds-small.mp4
+│   │   │   ├── shell-cmds.jpg
+│   │   │   ├── sonnet-not-lazy.jpg
+│   │   │   ├── sonnet-seems-fine.jpg
+│   │   │   ├── swe_bench.jpg
+│   │   │   ├── swe_bench.svg
+│   │   │   ├── swe_bench_lite.jpg
+│   │   │   ├── swe_bench_lite.svg
+│   │   │   ├── udiffs.jpg
+│   │   │   ├── watch.jpg
+│   │   │   └── watch.mp4
+│   │   ├── blog
+│   │   │   └── index.html
+│   │   ├── docs
+│   │   │   ├── config
+│   │   │   │   ├── adv-model-settings.md
+│   │   │   │   ├── aider_conf.md
+│   │   │   │   ├── api-keys.md
+│   │   │   │   ├── dotenv.md
+│   │   │   │   ├── editor.md
+│   │   │   │   ├── model-aliases.md
+│   │   │   │   └── options.md
+│   │   │   ├── install
+│   │   │   │   ├── codespaces.md
+│   │   │   │   ├── docker.md
+│   │   │   │   ├── optional.md
+│   │   │   │   └── replit.md
+│   │   │   ├── leaderboards
+│   │   │   │   ├── by-release-date.md
+│   │   │   │   ├── contrib.md
+│   │   │   │   ├── edit.md
+│   │   │   │   ├── index.md
+│   │   │   │   ├── notes.md
+│   │   │   │   └── refactor.md
+│   │   │   ├── legal
+│   │   │   │   ├── contributor-agreement.md
+│   │   │   │   └── privacy.md
+│   │   │   ├── llms
+│   │   │   │   ├── anthropic.md
+│   │   │   │   ├── azure.md
+│   │   │   │   ├── bedrock.md
+│   │   │   │   ├── cohere.md
+│   │   │   │   ├── deepseek.md
+│   │   │   │   ├── gemini.md
+│   │   │   │   ├── groq.md
+│   │   │   │   ├── lm-studio.md
+│   │   │   │   ├── ollama.md
+│   │   │   │   ├── openai-compat.md
+│   │   │   │   ├── openai.md
+│   │   │   │   ├── openrouter.md
+│   │   │   │   ├── other.md
+│   │   │   │   ├── vertex.md
+│   │   │   │   ├── warnings.md
+│   │   │   │   └── xai.md
+│   │   │   ├── more
+│   │   │   │   ├── analytics.md
+│   │   │   │   ├── edit-formats.md
+│   │   │   │   └── infinite-output.md
+│   │   │   ├── troubleshooting
+│   │   │   │   ├── aider-not-found.md
+│   │   │   │   ├── edit-errors.md
+│   │   │   │   ├── imports.md
+│   │   │   │   ├── support.md
+│   │   │   │   ├── token-limits.md
+│   │   │   │   └── warnings.md
+│   │   │   ├── usage
+│   │   │   │   ├── browser.md
+│   │   │   │   ├── caching.md
+│   │   │   │   ├── commands.md
+│   │   │   │   ├── conventions.md
+│   │   │   │   ├── copypaste.md
+│   │   │   │   ├── images-urls.md
+│   │   │   │   ├── lint-test.md
+│   │   │   │   ├── modes.md
+│   │   │   │   ├── tips.md
+│   │   │   │   ├── tutorials.md
+│   │   │   │   ├── voice.md
+│   │   │   │   └── watch.md
+│   │   │   ├── benchmarks-0125.md
+│   │   │   ├── benchmarks-1106.md
+│   │   │   ├── benchmarks-speed-1106.md
+│   │   │   ├── benchmarks.md
+│   │   │   ├── config.md
+│   │   │   ├── ctags.md
+│   │   │   ├── faq.md
+│   │   │   ├── git.md
+│   │   │   ├── install.md
+│   │   │   ├── languages.md
+│   │   │   ├── llms.md
+│   │   │   ├── more-info.md
+│   │   │   ├── repomap.md
+│   │   │   ├── scripting.md
+│   │   │   ├── troubleshooting.md
+│   │   │   ├── unified-diffs.md
+│   │   │   └── usage.md
+│   │   ├── examples
+│   │   │   ├── 2048-game.md
+│   │   │   ├── add-test.md
+│   │   │   ├── asciinema.md
+│   │   │   ├── census.md
+│   │   │   ├── chat-transcript-css.md
+│   │   │   ├── complex-change.md
+│   │   │   ├── css-exercises.md
+│   │   │   ├── hello-world-flask.md
+│   │   │   ├── hello.md
+│   │   │   ├── no-color.md
+│   │   │   ├── pong.md
+│   │   │   ├── README.md
+│   │   │   ├── semantic-search-replace.md
+│   │   │   └── update-docs.md
+│   │   ├── share
+│   │   │   └── index.md
+│   │   ├── _config.yml
+│   │   ├── Gemfile
+│   │   ├── HISTORY.md
+│   │   ├── index.md
+│   │   ├── install.ps1
+│   │   └── install.sh
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── analytics.py
+│   ├── args.py
+│   ├── args_formatter.py
+│   ├── commands.py
+│   ├── copypaste.py
+│   ├── diffs.py
+│   ├── dump.py
+│   ├── editor.py
+│   ├── exceptions.py
+│   ├── format_settings.py
+│   ├── gui.py
+│   ├── help.py
+│   ├── help_pats.py
+│   ├── history.py
+│   ├── io.py
+│   ├── linter.py
+│   ├── llm.py
+│   ├── main.py
+│   ├── mdstream.py
+│   ├── models.py
+│   ├── prompts.py
+│   ├── repo.py
+│   ├── repomap.py
+│   ├── report.py
+│   ├── run_cmd.py
+│   ├── scrape.py
+│   ├── sendchat.py
+│   ├── special.py
+│   ├── urls.py
+│   ├── utils.py
+│   ├── versioncheck.py
+│   ├── voice.py
+│   ├── watch.py
+│   └── watch_prompts.py
+├── benchmark
+│   ├── __init__.py
+│   ├── benchmark.py
+│   ├── clone-exercism.sh
+│   ├── cpp-test.sh
+│   ├── docker.sh
+│   ├── docker_build.sh
+│   ├── Dockerfile
+│   ├── install-docker-ubuntu.sh
+│   ├── npm-test.sh
+│   ├── over_time.py
+│   ├── plot.sh
+│   ├── plots.py
+│   ├── problem_stats.py
+│   ├── prompts.py
+│   ├── README.md
+│   ├── refactor_tools.py
+│   ├── rsync.sh
+│   ├── rungrid.py
+│   ├── swe-bench-lite.txt
+│   ├── swe-bench.txt
+│   ├── swe_bench.py
+├── constants
+│   ├── __pycache__
+│   ├── javascript
+│   │   ├── __pycache__
+│   │   ├── __init__.py
+│   │   └── exclusions.py
+│   ├── python
+│   │   ├── __pycache__
+│   │   ├── __init__.py
+│   │   └── exclusions.py
+│   └── __init__.py
+├── docker
+│   └── Dockerfile
+├── requirements
+│   ├── requirements-browser.in
+│   ├── requirements-browser.txt
+│   ├── requirements-dev.in
+│   ├── requirements-dev.txt
+│   ├── requirements-help.in
+│   ├── requirements-help.txt
+│   ├── requirements-playwright.in
+│   ├── requirements-playwright.txt
+│   └── requirements.in
+├── scripts
+│   ├── __init__.py
+│   ├── blame.py
+│   ├── Dockerfile.jekyll
+│   ├── history_prompts.py
+│   ├── issues.py
+│   ├── jekyll_build.sh
+│   ├── jekyll_run.sh
+│   ├── my_models.py
+│   ├── pip-compile.sh
+│   ├── update-blame.sh
+│   ├── update-docs.sh
+│   ├── update-history.py
+│   ├── versionbump.py
+│   └── yank-old-versions.py
+├── tests
+├── .dockerignore
+├── .flake8
+├── .gitignore
+├── .pre-commit-config.yaml
+├── CNAME
+├── CONTRIBUTING.md
+├── feedcode.py
+├── HISTORY.md
+├── LICENSE.txt
+├── MANIFEST.in
+├── output.txt
+├── pyproject.toml
+├── pytest.ini
+├── README.md
+└── requirements.txt
+
+# Concatenated Files:
+
+# File: aider\coders\__init__.py
+
+
+aider\coders\__init__.py
+
+
+# File: aider\coders\architect_coder.py
+
+
+aider\coders\architect_coder.py
+
+
+# File: aider\coders\architect_prompts.py
+
+
+aider\coders\architect_prompts.py:
+⋮...
+│class ArchitectPrompts(CoderPrompts):
+⋮...
+
+
+# File: aider\coders\ask_coder.py
+
+
+aider\coders\ask_coder.py
+
+
+# File: aider\coders\ask_prompts.py
+
+
+aider\coders\ask_prompts.py:
+⋮...
+│class AskPrompts(CoderPrompts):
+⋮...
+
+
+# File: aider\coders\base_coder.py
+
+
+aider\coders\base_coder.py:
+⋮...
+│class FinishReasonLength(Exception):
+⋮...
+│def wrap_fence(name):
+⋮...
+│class Coder:
+│    abs_fnames = None
+⋮...
+│    def setup_lint_cmds(self, lint_cmds):
+⋮...
+│    def abs_root_path(self, path):
+⋮...
+│    def show_pretty(self):
+⋮...
+│    def get_abs_fnames_content(self):
+⋮...
+│    def get_files_content(self, fnames=None):
+⋮...
+│    def get_read_only_files_content(self):
+⋮...
+│    def get_cur_message_text(self):
+⋮...
+│    def get_ident_mentions(self, text):
+⋮...
+│    def get_ident_filename_matches(self, idents):
+⋮...
+│    def get_repo_map(self, force_refresh=False):
+⋮...
+│    def get_repo_messages(self):
+⋮...
+│    def get_readonly_files_messages(self):
+⋮...
+│    def get_images_message(self, fnames):
+⋮...
+│    def init_before_message(self):
+⋮...
+│    def run(self, with_message=None, preproc=True):
+⋮...
+│    def get_input(self):
+⋮...
+│    def preproc_user_input(self, inp):
+⋮...
+│    def run_one(self, user_message, preproc):
+⋮...
+│    def keyboard_interrupt(self):
+⋮...
+│    def summarize_start(self):
+⋮...
+│    def summarize_end(self):
+⋮...
+│    def move_back_cur_messages(self, message):
+⋮...
+│    def get_user_language(self):
+⋮...
+│    def get_platform_info(self):
+⋮...
+│    def fmt_system_prompt(self, prompt):
+⋮...
+│    def format_messages(self):
+⋮...
+│    def warm_cache(self, chunks):
+⋮...
+│    def send_message(self, inp):
+⋮...
+│    def reply_completed(self):
+⋮...
+│    def show_exhausted_error(self):
+⋮...
+│    def lint_edited(self, fnames):
+⋮...
+│    def update_cur_messages(self):
+⋮...
+│    def get_file_mentions(self, content):
+⋮...
+│    def check_for_file_mentions(self, content):
+⋮...
+│    def send(self, messages, model=None, functions=None):
+⋮...
+│    def show_send_output(self, completion):
+⋮...
+│    def show_send_output_stream(self, completion):
+⋮...
+│    def live_incremental_response(self, final):
+⋮...
+│    def render_incremental_response(self, final):
+⋮...
+│    def calculate_and_show_tokens_and_cost(self, messages, completion=None):
+│        prompt_tokens = 0
+⋮...
+│        def format_cost(value):
+⋮...
+│    def show_usage_report(self):
+⋮...
+│    def get_multi_response_content(self, final=False):
+⋮...
+│    def get_rel_fname(self, fname):
+⋮...
+│    def get_inchat_relative_files(self):
+⋮...
+│    def get_all_relative_files(self):
+⋮...
+│    def get_addable_relative_files(self):
+⋮...
+│    def check_for_dirty_commit(self, path):
+⋮...
+│    def check_added_files(self):
+⋮...
+│    def prepare_to_edit(self, edits):
+⋮...
+│    def parse_partial_args(self):
+⋮...
+│    def get_context_from_history(self, history):
+⋮...
+│    def auto_commit(self, edited, context=None):
+⋮...
+│    def show_auto_commit_outcome(self, res):
+⋮...
+│    def show_undo_hint(self):
+⋮...
+│    def get_edits(self, mode="update"):
+⋮...
+│    def run_shell_commands(self):
+⋮...
+│    def handle_shell_commands(self, commands_str, group):
+⋮...
+
+
+# File: aider\coders\base_prompts.py
+
+
+aider\coders\base_prompts.py:
+│class CoderPrompts:
+⋮...
+
+
+# File: aider\coders\chat_chunks.py
+
+
+aider\coders\chat_chunks.py:
+⋮...
+│@dataclass
+│class ChatChunks:
+│    system: List = field(default_factory=list)
+⋮...
+│    def all_messages(self):
+⋮...
+│    def add_cache_control(self, messages):
+⋮...
+
+
+# File: aider\coders\editblock_coder.py
+
+
+aider\coders\editblock_coder.py:
+⋮...
+│class EditBlockCoder(Coder):
+│    """A coder that uses search/replace blocks for code modifications."""
+│
+⋮...
+│    def apply_edits(self, edits, dry_run=False):
+⋮...
+│def prep(content):
+⋮...
+│def perfect_or_whitespace(whole_lines, part_lines, replace_lines):
+⋮...
+│def perfect_replace(whole_lines, part_lines, replace_lines):
+⋮...
+│def replace_most_similar_chunk(whole, part, replace):
+⋮...
+│def try_dotdotdots(whole, part, replace):
+⋮...
+│def replace_part_with_missing_leading_whitespace(whole_lines, part_lines, replace_lines):
+⋮...
+│def match_but_for_leading_whitespace(whole_lines, part_lines):
+⋮...
+│def replace_closest_edit_distance(whole_lines, part, part_lines, replace_lines):
+⋮...
+│def strip_quoted_wrapping(res, fname=None, fence=DEFAULT_FENCE):
+⋮...
+│def do_replace(fname, content, before_text, after_text, fence=None):
+⋮...
+│def strip_filename(filename, fence):
+⋮...
+│def find_original_update_blocks(content, fence=DEFAULT_FENCE, valid_fnames=None):
+⋮...
+│def find_filename(lines, fence, valid_fnames):
+⋮...
+│def find_similar_lines(search_lines, content_lines, threshold=0.6):
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\coders\editblock_fenced_coder.py
+
+
+aider\coders\editblock_fenced_coder.py
+
+
+# File: aider\coders\editblock_fenced_prompts.py
+
+
+aider\coders\editblock_fenced_prompts.py
+
+
+# File: aider\coders\editblock_func_coder.py
+
+
+aider\coders\editblock_func_coder.py:
+⋮...
+│class EditBlockFunctionCoder(Coder):
+│    functions = [
+│        dict(
+│            name="replace_lines",
+│            description="create or update one or more files",
+│            parameters=dict(
+│                type="object",
+│                required=["explanation", "edits"],
+│                properties=dict(
+│                    explanation=dict(
+│                        type="string",
+⋮...
+│    def __init__(self, code_format, *args, **kwargs):
+⋮...
+│def get_arg(edit, arg):
+⋮...
+
+
+# File: aider\coders\editblock_func_prompts.py
+
+
+aider\coders\editblock_func_prompts.py:
+⋮...
+│class EditBlockFunctionPrompts(CoderPrompts):
+⋮...
+
+
+# File: aider\coders\editblock_prompts.py
+
+
+aider\coders\editblock_prompts.py
+
+
+# File: aider\coders\editor_editblock_coder.py
+
+
+aider\coders\editor_editblock_coder.py
+
+
+# File: aider\coders\editor_editblock_prompts.py
+
+
+aider\coders\editor_editblock_prompts.py:
+⋮...
+│class EditorEditBlockPrompts(EditBlockPrompts):
+⋮...
+
+
+# File: aider\coders\editor_whole_coder.py
+
+
+aider\coders\editor_whole_coder.py
+
+
+# File: aider\coders\editor_whole_prompts.py
+
+
+aider\coders\editor_whole_prompts.py:
+⋮...
+│class EditorWholeFilePrompts(WholeFilePrompts):
+⋮...
+
+
+# File: aider\coders\help_coder.py
+
+
+aider\coders\help_coder.py
+
+
+# File: aider\coders\help_prompts.py
+
+
+aider\coders\help_prompts.py:
+⋮...
+│class HelpPrompts(CoderPrompts):
+⋮...
+
+
+# File: aider\coders\search_replace.py
+
+
+aider\coders\search_replace.py:
+⋮...
+│class RelativeIndenter:
+│    """Rewrites text files to have relative indentation, which involves
+│    reformatting the leading white space on lines.  This format makes
+│    it easier to search and apply edits to pairs of code blocks which
+│    may differ significantly in their overall level of indentation.
+│
+│    It removes leading white space which is shared with the preceding
+│    line.
+│
+│    Original:
+│    ```
+⋮...
+│    def select_unique_marker(self, chars):
+⋮...
+│    def make_absolute(self, text):
+⋮...
+│def map_patches(texts, patches, debug):
+⋮...
+│def relative_indent(texts):
+⋮...
+│def lines_to_chars(lines, mapping):
+⋮...
+│def reverse_lines(text):
+⋮...
+│def try_strategy(texts, strategy, preproc):
+⋮...
+│def strip_blank_lines(texts):
+⋮...
+│def read_text(fname):
+⋮...
+│def proc(dname):
+⋮...
+│def colorize_result(result):
+⋮...
+│def main(dnames):
+⋮...
+
+
+# File: aider\coders\single_wholefile_func_coder.py
+
+
+aider\coders\single_wholefile_func_coder.py:
+⋮...
+│class SingleWholeFileFunctionCoder(Coder):
+│    edit_format = "func"
+│
+⋮...
+│    def __init__(self, *args, **kwargs):
+⋮...
+
+
+# File: aider\coders\single_wholefile_func_prompts.py
+
+
+aider\coders\single_wholefile_func_prompts.py:
+⋮...
+│class SingleWholeFileFunctionPrompts(CoderPrompts):
+⋮...
+
+
+# File: aider\coders\udiff_coder.py
+
+
+aider\coders\udiff_coder.py:
+⋮...
+│def do_replace(fname, content, hunk):
+⋮...
+│def apply_hunk(content, hunk):
+⋮...
+│def flexi_just_search_and_replace(texts):
+⋮...
+│def make_new_lines_explicit(content, hunk):
+⋮...
+│def cleanup_pure_whitespace_lines(lines):
+⋮...
+│def normalize_hunk(hunk):
+⋮...
+│def directly_apply_hunk(content, hunk):
+⋮...
+│def apply_partial_hunk(content, preceding_context, changes, following_context):
+⋮...
+│def find_diffs(content):
+⋮...
+│def process_fenced_block(lines, start_line_num):
+⋮...
+│def hunk_to_before_after(hunk, lines=False):
+⋮...
+
+
+# File: aider\coders\udiff_prompts.py
+
+
+aider\coders\udiff_prompts.py
+
+
+# File: aider\coders\wholefile_coder.py
+
+
+aider\coders\wholefile_coder.py:
+⋮...
+│class WholeFileCoder(Coder):
+│    """A coder that operates on entire files for code modifications."""
+│
+⋮...
+│    def get_edits(self, mode="update"):
+⋮...
+│    def do_live_diff(self, full_path, new_lines, final):
+⋮...
+
+
+# File: aider\coders\wholefile_func_coder.py
+
+
+aider\coders\wholefile_func_coder.py:
+⋮...
+│class WholeFileFunctionCoder(Coder):
+│    functions = [
+│        dict(
+│            name="write_file",
+│            description="create or update one or more files",
+│            parameters=dict(
+│                type="object",
+│                required=["explanation", "files"],
+│                properties=dict(
+│                    explanation=dict(
+│                        type="string",
+⋮...
+│    def __init__(self, *args, **kwargs):
+⋮...
+│    def live_diffs(self, fname, content, final):
+⋮...
+
+
+# File: aider\coders\wholefile_func_prompts.py
+
+
+aider\coders\wholefile_func_prompts.py:
+⋮...
+│class WholeFileFunctionPrompts(CoderPrompts):
+⋮...
+
+
+# File: aider\coders\wholefile_prompts.py
+
+
+aider\coders\wholefile_prompts.py
+
+
+# File: aider\resources\__init__.py
+
+
+aider\resources\__init__.py
+
+
+# File: aider\__init__.py
+
+
+aider\__init__.py
+
+
+# File: aider\__main__.py
+
+
+aider\__main__.py
+
+
+# File: aider\analytics.py
+
+
+aider\analytics.py:
+⋮...
+│def compute_hex_threshold(percent):
+⋮...
+│def is_uuid_in_percentage(uuid_str, percent):
+⋮...
+│class Analytics:
+│    # providers
+│    mp = None
+⋮...
+│    def disable(self, permanently):
+⋮...
+│    def get_data_file_path(self):
+⋮...
+│    def get_or_create_uuid(self):
+⋮...
+│    def load_data(self):
+⋮...
+│    def save_data(self):
+⋮...
+│    def get_system_info(self):
+⋮...
+│    def _redact_model_name(self, model):
+⋮...
+
+
+# File: aider\args.py
+
+
+aider\args.py:
+⋮...
+│def default_env_file(git_root):
+⋮...
+│def get_parser(default_config_files, git_root):
+⋮...
+│def get_md_help():
+⋮...
+│def get_sample_yaml():
+⋮...
+│def get_sample_dotenv():
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\args_formatter.py
+
+
+aider\args_formatter.py:
+⋮...
+│class DotEnvFormatter(argparse.HelpFormatter):
+│    def start_section(self, heading):
+│        res = "\n\n"
+│        res += "#" * (len(heading) + 3)
+│        res += f"\n# {heading}"
+⋮...
+│    def _format_usage(self, usage, actions, groups, prefix):
+⋮...
+│class YamlHelpFormatter(argparse.HelpFormatter):
+│    def start_section(self, heading):
+│        res = "\n\n"
+│        res += "#" * (len(heading) + 3)
+│        res += f"\n# {heading}"
+⋮...
+│    def _format_usage(self, usage, actions, groups, prefix):
+⋮...
+│class MarkdownHelpFormatter(argparse.HelpFormatter):
+│    def start_section(self, heading):
+⋮...
+│    def _format_usage(self, usage, actions, groups, prefix):
+⋮...
+
+
+# File: aider\commands.py
+
+
+aider\commands.py:
+⋮...
+│class SwitchCoder(Exception):
+⋮...
+│class Commands:
+│    voice = None
+⋮...
+│    def clone(self):
+⋮...
+│    def get_completions(self, cmd):
+⋮...
+│    def get_commands(self):
+⋮...
+│    def do_run(self, cmd_name, args):
+⋮...
+│    def matching_commands(self, inp):
+⋮...
+│    def run(self, inp):
+⋮...
+│    def cmd_commit(self, args=None):
+⋮...
+│    def raw_cmd_commit(self, args=None):
+⋮...
+│    def _drop_all_files(self):
+⋮...
+│    def _clear_chat_history(self):
+⋮...
+│    def cmd_tokens(self, args):
+│        "Report on the number of tokens used by the current chat context"
+│
+⋮...
+│        def fmt(v):
+⋮...
+│    def raw_cmd_undo(self, args):
+⋮...
+│    def raw_cmd_diff(self, args=""):
+⋮...
+│    def quote_fname(self, fname):
+⋮...
+│    def completions_raw_read_only(self, document, complete_event):
+⋮...
+│    def completions_add(self):
+⋮...
+│    def glob_filtered_to_repo(self, pattern):
+⋮...
+│    def cmd_run(self, args, add_on_nonzero_exit=False):
+⋮...
+│    def cmd_exit(self, args):
+⋮...
+│    def basic_help(self):
+⋮...
+│    def _generic_chat_command(self, args, edit_format):
+⋮...
+│    def get_help_md(self):
+⋮...
+│    def _add_read_only_file(self, abs_path, original_name):
+⋮...
+│    def _add_read_only_directory(self, abs_path, original_name):
+⋮...
+│def expand_subdir(file_path):
+⋮...
+│def parse_quoted_filenames(args):
+⋮...
+│def get_help_md():
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\copypaste.py
+
+
+aider\copypaste.py:
+⋮...
+│class ClipboardWatcher:
+│    """Watches clipboard for changes and updates IO placeholder"""
+│
+⋮...
+│    def start(self):
+⋮...
+│    def stop(self):
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\diffs.py
+
+
+aider\diffs.py:
+⋮...
+│def main():
+⋮...
+│def create_progress_bar(percentage):
+⋮...
+│def assert_newlines(lines):
+⋮...
+│def diff_partial_update(lines_orig, lines_updated, final=False, fname=None):
+⋮...
+│def find_last_non_deleted(lines_orig, lines_updated):
+⋮...
+
+
+# File: aider\dump.py
+
+
+aider\dump.py:
+⋮...
+│def cvt(s):
+⋮...
+
+
+# File: aider\editor.py
+
+
+aider\editor.py:
+⋮...
+│def print_status_message(success, message, style=None):
+⋮...
+│def write_temp_file(
+│    input_data="",
+│    suffix=None,
+│    prefix=None,
+│    dir=None,
+⋮...
+│def get_environment_editor(default=None):
+⋮...
+│def discover_editor(editor_override=None):
+⋮...
+
+
+# File: aider\exceptions.py
+
+
+aider\exceptions.py:
+⋮...
+│@dataclass
+│class ExInfo:
+⋮...
+│class LiteLLMExceptions:
+│    exceptions = dict()
+│
+⋮...
+│    def _load(self, strict=False):
+⋮...
+
+
+# File: aider\format_settings.py
+
+
+aider\format_settings.py:
+│def scrub_sensitive_info(args, text):
+⋮...
+
+
+# File: aider\gui.py
+
+
+aider\gui.py:
+⋮...
+│class CaptureIO(InputOutput):
+│    lines = []
+│
+│    def tool_output(self, msg, log_only=False):
+⋮...
+│    def tool_error(self, msg):
+⋮...
+│    def tool_warning(self, msg):
+⋮...
+│    def get_captured_lines(self):
+⋮...
+│class State:
+│    keys = set()
+│
+│    def init(self, key, val=None):
+⋮...
+│@st.cache_resource
+│def get_state():
+⋮...
+│@st.cache_resource
+│def get_coder():
+⋮...
+│class GUI:
+│    prompt = None
+⋮...
+│    def announce(self):
+⋮...
+│    def show_edit_info(self, edit):
+⋮...
+│    def add_undo(self, commit_hash):
+⋮...
+│    def do_sidebar(self):
+⋮...
+│    def do_add_to_chat(self):
+⋮...
+│    def do_add_files(self):
+⋮...
+│    def do_add_web_page(self):
+⋮...
+│    def do_clear_chat_history(self):
+⋮...
+│    def do_recent_msgs(self):
+⋮...
+│    def do_messages_container(self):
+⋮...
+│    def initialize_state(self):
+⋮...
+│    def button(self, args, **kwargs):
+⋮...
+│    def prompt_pending(self):
+⋮...
+│    def process_chat(self):
+⋮...
+│    def info(self, message, echo=True):
+⋮...
+│    def do_web(self):
+⋮...
+│    def do_undo(self, commit_hash):
+⋮...
+│def gui_main():
+⋮...
+
+
+# File: aider\help.py
+
+
+aider\help.py:
+⋮...
+│def get_package_files():
+⋮...
+│def fname_to_url(filepath):
+⋮...
+│def get_index():
+⋮...
+
+
+# File: aider\help_pats.py
+
+
+aider\help_pats.py
+
+
+# File: aider\history.py
+
+
+aider\history.py:
+⋮...
+│class ChatSummary:
+│    def __init__(self, models=None, max_tokens=1024):
+│        if not models:
+│            raise ValueError("At least one model must be provided")
+│        self.models = models if isinstance(models, list) else [models]
+│        self.max_tokens = max_tokens
+⋮...
+│    def tokenize(self, messages):
+⋮...
+│    def summarize(self, messages, depth=0):
+⋮...
+│    def summarize_all(self, messages):
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\io.py
+
+
+aider\io.py:
+⋮...
+│class AutoCompleter(Completer):
+│    def __init__(
+│        self, root, rel_fnames, addable_rel_fnames, commands, encoding, abs_read_only_fnames=None
+⋮...
+│    def tokenize(self):
+⋮...
+│    def get_command_completions(self, document, complete_event, text, words):
+⋮...
+│    def get_completions(self, document, complete_event):
+⋮...
+│class InputOutput:
+│    num_error_outputs = 0
+⋮...
+│    def _get_style(self):
+⋮...
+│    def read_image(self, filename):
+⋮...
+│    def rule(self):
+⋮...
+│    def get_input(
+│        self,
+│        root,
+│        rel_fnames,
+│        addable_rel_fnames,
+│        commands,
+│        abs_read_only_fnames=None,
+│        edit_format=None,
+│    ):
+│        self.rule()
+│
+⋮...
+│        def suspend_to_bg(event):
+⋮...
+│    def display_user_input(self, inp):
+⋮...
+│    def user_input(self, inp, log_only=True):
+⋮...
+│    def confirm_ask(
+│        self,
+│        question,
+│        default="y",
+│        subject=None,
+│        explicit_yes_required=False,
+│        group=None,
+│        allow_never=False,
+⋮...
+│    def _tool_message(self, message="", strip=True, color=None):
+⋮...
+│    def tool_error(self, message="", strip=True):
+⋮...
+│    def tool_warning(self, message="", strip=True):
+⋮...
+│    def tool_output(self, *messages, log_only=False, bold=False):
+⋮...
+│    def print(self, message=""):
+⋮...
+│    def append_chat_history(self, text, linebreak=False, blockquote=False, strip=True):
+⋮...
+│    def format_files_for_input(self, rel_fnames, rel_read_only_fnames):
+⋮...
+│def get_rel_fname(fname, root):
+⋮...
+
+
+# File: aider\linter.py
+
+
+aider\linter.py:
+⋮...
+│class Linter:
+│    def __init__(self, encoding="utf-8", root=None):
+│        self.encoding = encoding
+│        self.root = root
+│
+│        self.languages = dict(
+│            python=self.py_lint,
+│        )
+⋮...
+│    def get_rel_fname(self, fname):
+⋮...
+│    def run_cmd(self, cmd, rel_fname, code):
+⋮...
+│    def errors_to_lint_result(self, rel_fname, errors):
+⋮...
+│    def lint(self, fname, cmd=None):
+⋮...
+│    def flake8_lint(self, rel_fname):
+⋮...
+│@dataclass
+│class LintResult:
+⋮...
+│def lint_python_compile(fname, code):
+⋮...
+│def basic_lint(fname, code):
+⋮...
+│def tree_context(fname, code, line_nums):
+⋮...
+│def traverse_tree(node):
+⋮...
+│def find_filenames_and_linenums(text, fnames):
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\llm.py
+
+
+aider\llm.py:
+⋮...
+│class LazyLiteLLM:
+│    _lazy_module = None
+│
+⋮...
+│    def _load_litellm(self):
+⋮...
+
+
+# File: aider\main.py
+
+
+aider\main.py:
+⋮...
+│def check_config_files_for_yes(config_files):
+⋮...
+│def get_git_root():
+⋮...
+│def guessed_wrong_repo(io, git_root, fnames, git_dname):
+⋮...
+│def make_new_repo(git_root, io):
+⋮...
+│def setup_git(git_root, io):
+⋮...
+│def check_gitignore(git_root, io, ask=True):
+⋮...
+│def check_streamlit_install(io):
+⋮...
+│def launch_gui(args):
+⋮...
+│def parse_lint_cmds(lint_cmds, io):
+⋮...
+│def generate_search_path_list(default_file, git_root, command_line_file):
+⋮...
+│def register_models(git_root, model_settings_fname, io, verbose=False):
+⋮...
+│def load_dotenv_files(git_root, dotenv_fname, encoding="utf-8"):
+⋮...
+│def register_litellm_models(git_root, model_metadata_fname, io, verbose=False):
+⋮...
+│def sanity_check_repo(repo, io):
+⋮...
+│def main(argv=None, input=None, output=None, force_git_root=None, return_coder=False):
+│    report_uncaught_exceptions()
+│
+⋮...
+│    def get_io(pretty):
+⋮...
+│def is_first_run_of_new_version(io, verbose=False):
+⋮...
+│def check_and_load_imports(io, is_first_run, verbose=False):
+⋮...
+│def load_slow_imports(swallow=True):
+⋮...
+
+
+# File: aider\mdstream.py
+
+
+aider\mdstream.py:
+⋮...
+│class MarkdownStream:
+│    live = None
+⋮...
+│    def update(self, text, final=False):
+⋮...
+
+
+# File: aider\models.py
+
+
+aider\models.py:
+⋮...
+│@dataclass
+│class ModelSettings:
+⋮...
+│class ModelInfoManager:
+│    MODEL_INFO_URL = (
+│        "https://raw.githubusercontent.com/BerriAI/litellm/main/"
+│        "model_prices_and_context_window.json"
+⋮...
+│    def _load_cache(self):
+⋮...
+│    def _update_cache(self):
+⋮...
+│    def get_model_from_cached_json_db(self, model):
+⋮...
+│    def get_model_info(self, model):
+⋮...
+│class Model(ModelSettings):
+│    def __init__(self, model, weak_model=None, editor_model=None, editor_edit_format=None):
+│        # Map any alias to its canonical name
+│        model = MODEL_ALIASES.get(model, model)
+│
+│        self.name = model
+│
+│        self.max_chat_history_tokens = 1024
+│        self.weak_model = None
+│        self.editor_model = None
+│
+⋮...
+│    def get_model_info(self, model):
+⋮...
+│    def _copy_fields(self, source):
+⋮...
+│    def configure_model_settings(self, model):
+⋮...
+│    def apply_generic_model_settings(self, model):
+⋮...
+│    def get_weak_model(self, provided_weak_model_name):
+⋮...
+│    def get_editor_model(self, provided_editor_model_name, editor_edit_format):
+⋮...
+│    def tokenizer(self, text):
+⋮...
+│    def get_image_size(self, fname):
+⋮...
+│    def fast_validate_environment(self):
+⋮...
+│    def validate_environment(self):
+⋮...
+│def validate_variables(vars):
+⋮...
+│def sanity_check_model(io, model):
+⋮...
+│def fuzzy_match_models(name):
+⋮...
+│def get_model_settings_as_yaml():
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\prompts.py
+
+
+aider\prompts.py
+
+
+# File: aider\repo.py
+
+
+aider\repo.py:
+⋮...
+│class GitRepo:
+│    repo = None
+⋮...
+│    def commit(self, fnames=None, context=None, message=None, aider_edits=False):
+⋮...
+│    def get_commit_message(self, diffs, context):
+⋮...
+│    def get_diffs(self, fnames=None):
+⋮...
+│    def get_tracked_files(self):
+⋮...
+│    def normalize_path(self, path):
+⋮...
+│    def refresh_aider_ignore(self):
+⋮...
+│    def ignored_file(self, fname):
+⋮...
+│    def ignored_file_raw(self, fname):
+⋮...
+│    def path_in_repo(self, path):
+⋮...
+│    def abs_root_path(self, path):
+⋮...
+│    def is_dirty(self, path=None):
+⋮...
+│    def get_head_commit(self):
+⋮...
+│    def get_head_commit_sha(self, short=False):
+⋮...
+
+
+# File: aider\repomap.py
+
+
+aider\repomap.py:
+⋮...
+│class RepoMap:
+│    CACHE_VERSION = 3
+⋮...
+│    def token_count(self, text):
+⋮...
+│    def get_rel_fname(self, fname):
+⋮...
+│    def tags_cache_error(self, original_error=None):
+⋮...
+│    def load_tags_cache(self):
+⋮...
+│    def save_tags_cache(self):
+⋮...
+│    def get_mtime(self, fname):
+⋮...
+│    def get_tags(self, fname, rel_fname):
+⋮...
+│    def get_tags_raw(self, fname, rel_fname):
+⋮...
+│    def get_ranked_tags(
+│        self, chat_fnames, other_fnames, mentioned_fnames, mentioned_idents, progress=None
+⋮...
+│    def get_ranked_tags_map(
+│        self,
+│        chat_fnames,
+│        other_fnames=None,
+│        max_map_tokens=None,
+│        mentioned_fnames=None,
+│        mentioned_idents=None,
+│        force_refresh=False,
+⋮...
+│    def get_ranked_tags_map_uncached(
+│        self,
+│        chat_fnames,
+│        other_fnames=None,
+│        max_map_tokens=None,
+│        mentioned_fnames=None,
+│        mentioned_idents=None,
+⋮...
+│    def render_tree(self, abs_fname, rel_fname, lois):
+⋮...
+│    def to_tree(self, tags, chat_rel_fnames):
+⋮...
+│def find_src_files(directory):
+⋮...
+│def get_scm_fname(lang):
+⋮...
+
+
+# File: aider\report.py
+
+
+aider\report.py:
+⋮...
+│def get_python_info():
+⋮...
+│def get_os_info():
+⋮...
+│def get_git_info():
+⋮...
+│def report_github_issue(issue_text, title=None, confirm=True):
+⋮...
+│def report_uncaught_exceptions():
+⋮...
+│def dummy_function1():
+│    def dummy_function2():
+│        def dummy_function3():
+│            raise ValueError("boo")
+│
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\run_cmd.py
+
+
+aider\run_cmd.py:
+⋮...
+│def get_windows_parent_process_name():
+⋮...
+│def run_cmd_subprocess(command, verbose=False, cwd=None):
+⋮...
+│def run_cmd_pexpect(command, verbose=False, cwd=None):
+⋮...
+
+
+# File: aider\scrape.py
+
+
+aider\scrape.py:
+⋮...
+│class Scraper:
+│    pandoc_available = None
+⋮...
+│    def scrape(self, url):
+⋮...
+│    def looks_like_html(self, content):
+⋮...
+│    def scrape_with_playwright(self, url):
+⋮...
+│    def scrape_with_httpx(self, url):
+⋮...
+│    def try_pandoc(self):
+⋮...
+│    def html_to_markdown(self, page_source):
+⋮...
+│def slimdown_html(soup):
+⋮...
+│def main(url):
+⋮...
+
+
+# File: aider\sendchat.py
+
+
+aider\sendchat.py:
+⋮...
+│def send_completion(
+│    model_name,
+│    messages,
+│    functions,
+│    stream,
+│    temperature=0,
+│    extra_params=None,
+⋮...
+
+
+# File: aider\special.py
+
+
+aider\special.py
+
+
+# File: aider\urls.py
+
+
+aider\urls.py
+
+
+# File: aider\utils.py
+
+
+aider\utils.py:
+⋮...
+│class IgnorantTemporaryDirectory:
+│    def __init__(self):
+│        if sys.version_info >= (3, 10):
+│            self.temp_dir = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
+│        else:
+⋮...
+│    def __enter__(self):
+⋮...
+│    def __exit__(self, exc_type, exc_val, exc_tb):
+⋮...
+│    def cleanup(self):
+⋮...
+│class ChdirTemporaryDirectory(IgnorantTemporaryDirectory):
+│    def __init__(self):
+│        try:
+│            self.cwd = os.getcwd()
+│        except FileNotFoundError:
+│            self.cwd = None
+│
+⋮...
+│    def __enter__(self):
+⋮...
+│    def __exit__(self, exc_type, exc_val, exc_tb):
+⋮...
+│class GitTemporaryDirectory(ChdirTemporaryDirectory):
+│    def __enter__(self):
+│        dname = super().__enter__()
+│        self.repo = make_repo(dname)
+⋮...
+│    def __exit__(self, exc_type, exc_val, exc_tb):
+⋮...
+│def make_repo(path=None):
+⋮...
+│def safe_abs_path(res):
+⋮...
+│def format_content(role, content):
+⋮...
+│def format_messages(messages, title=None):
+⋮...
+│def split_chat_history_markdown(text, include_tool=False):
+│    messages = []
+⋮...
+│    def append_msg(role, lines):
+⋮...
+│def get_pip_install(args):
+⋮...
+│def run_install(cmd):
+⋮...
+│class Spinner:
+│    unicode_spinner = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+⋮...
+│    def __init__(self, text):
+⋮...
+│    def test_charset(self):
+⋮...
+│    def step(self):
+⋮...
+│    def _step(self):
+⋮...
+│    def end(self):
+⋮...
+│def printable_shell_command(cmd_list):
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\versioncheck.py
+
+
+aider\versioncheck.py:
+⋮...
+│def install_upgrade(io, latest_version=None):
+⋮...
+
+
+# File: aider\voice.py
+
+
+aider\voice.py:
+⋮...
+│class SoundDeviceError(Exception):
+⋮...
+│class Voice:
+│    max_rms = 0
+⋮...
+│    def record_and_transcribe(self, history=None, language=None):
+⋮...
+│    def raw_record_and_transcribe(self, history, language):
+⋮...
+
+
+# File: aider\watch.py
+
+
+aider\watch.py:
+⋮...
+│def load_gitignores(gitignore_paths: list[Path]) -> Optional[PathSpec]:
+⋮...
+│class FileWatcher:
+│    """Watches source files for changes and AI comments"""
+│
+⋮...
+│    def start(self):
+⋮...
+│    def stop(self):
+⋮...
+│    def get_ai_comments(self, filepath):
+⋮...
+│def main():
+⋮...
+
+
+# File: aider\watch_prompts.py
+
+
+aider\watch_prompts.py
+
+
+# File: benchmark\__init__.py
+
+
+benchmark\__init__.py
+
+
+# File: benchmark\benchmark.py
+
+
+benchmark\benchmark.py:
+⋮...
+│def find_latest_benchmark_dir():
+⋮...
+│def show_stats(dirnames, graphs, stats_languages=None):
+⋮...
+│def resolve_dirname(dirname, use_single_prior, make_new):
+⋮...
+│@app.command()
+│def main(
+│    dirnames: Optional[List[str]] = typer.Argument(None, help="Directory names"),
+│    graphs: bool = typer.Option(False, "--graphs", help="Generate graphs"),
+│    model: str = typer.Option("gpt-3.5-turbo", "--model", "-m", help="Model name"),
+│    sleep: float = typer.Option(
+│        0, "--sleep", help="Sleep seconds between tests when single threaded"
+│    ),
+│    languages: str = typer.Option(
+│        None, "--languages", "-l", help="Only run tests for specific languages (comma separated)"
+│    ),
+⋮...
+│    repo = git.Repo(search_parent_directories=True)
+⋮...
+│    def get_exercise_dirs(base_dir, languages=None):
+⋮...
+│def show_diffs(dirnames):
+⋮...
+│def load_results(dirname, stats_languages=None):
+⋮...
+│def summarize_results(dirname, stats_languages=None):
+│    all_results = load_results(dirname, stats_languages)
+│
+⋮...
+│    def show(stat, red="red"):
+⋮...
+│def get_versions(commit_hashes):
+⋮...
+│def get_replayed_content(replay_dname, test_dname):
+⋮...
+│def run_test(original_dname, testdir, *args, **kwargs):
+⋮...
+│def run_test_real(
+│    original_dname,
+│    testdir,
+│    model_name,
+│    edit_format,
+│    tries,
+│    no_unit_tests,
+│    no_aider,
+│    verbose,
+│    commit_hash,
+⋮...
+│def run_unit_tests(original_dname, testdir, history_fname, test_files):
+⋮...
+│def cleanup_test_output(output, testdir):
+⋮...
+
+
+# File: benchmark\over_time.py
+
+
+benchmark\over_time.py:
+⋮...
+│@dataclass
+│class ModelData:
+⋮...
+│class BenchmarkPlotter:
+│    LABEL_FONT_SIZE = 16
+│
+⋮...
+│    def setup_plot_style(self):
+⋮...
+│    def load_data(self, yaml_file: str) -> List[ModelData]:
+⋮...
+│    def create_figure(self) -> Tuple[plt.Figure, plt.Axes]:
+⋮...
+│    def plot_model_series(self, ax: plt.Axes, models: List[ModelData]):
+⋮...
+│    def set_labels_and_style(self, ax: plt.Axes):
+⋮...
+│    def save_and_display(self, fig: plt.Figure):
+⋮...
+│    def plot(self, yaml_file: str):
+⋮...
+│def main():
+⋮...
+
+
+# File: benchmark\plots.py
+
+
+benchmark\plots.py
+
+
+# File: benchmark\problem_stats.py
+
+
+benchmark\problem_stats.py:
+⋮...
+│def get_dirs_from_leaderboard():
+⋮...
+│def load_results(dirname):
+⋮...
+│def analyze_exercise_solutions(dirs=None, topn=None, copy_hard_set=False):
+⋮...
+
+
+# File: benchmark\prompts.py
+
+
+benchmark\prompts.py
+
+
+# File: benchmark\refactor_tools.py
+
+
+benchmark\refactor_tools.py:
+⋮...
+│class ParentNodeTransformer(ast.NodeTransformer):
+│    """
+│    This transformer sets the 'parent' attribute on each node.
+⋮...
+│    def generic_visit(self, node):
+⋮...
+│def verify_full_func_at_top_level(tree, func, func_children):
+⋮...
+│def verify_old_class_children(tree, old_class, old_class_children):
+⋮...
+│class SelfUsageChecker(ast.NodeVisitor):
+⋮...
+│def find_python_files(path):
+⋮...
+│def find_non_self_methods(path):
+⋮...
+│def process(entry):
+⋮...
+│def main(paths):
+⋮...
+
+
+# File: benchmark\rungrid.py
+
+
+benchmark\rungrid.py:
+⋮...
+│def main():
+⋮...
+│def run(dirname, model, edit_format):
+⋮...
+
+
+# File: benchmark\swe_bench.py
+
+
+benchmark\swe_bench.py:
+⋮...
+│def plot_swe_bench(data_file, is_lite):
+⋮...
+
+
+# File: constants\javascript\__init__.py
+
+
+constants\javascript\__init__.py
+
+
+# File: constants\javascript\exclusions.py
+
+
+constants\javascript\exclusions.py
+
+
+# File: constants\python\__init__.py
+
+
+constants\python\__init__.py
+
+
+# File: constants\python\exclusions.py
+
+
+constants\python\exclusions.py
+
+
+# File: constants\__init__.py
+
+
+constants\__init__.py
+
+
+# File: scripts\__init__.py
+
+
+scripts\__init__.py
+
+
+# File: scripts\blame.py
+
+
+scripts\blame.py:
+⋮...
+│def blame(start_tag, end_tag=None):
+⋮...
+│def get_all_commit_hashes_between_tags(start_tag, end_tag=None):
+⋮...
+│def run(cmd):
+⋮...
+│def get_commit_authors(commits):
+⋮...
+│def process_all_tags_since(start_tag):
+⋮...
+│def get_latest_version_tag():
+⋮...
+│def main():
+⋮...
+│def get_counts_for_file(start_tag, end_tag, authors, fname):
+⋮...
+│def get_all_tags_since(start_tag):
+⋮...
+│def get_tag_date(tag):
+⋮...
+
+
+# File: scripts\history_prompts.py
+
+
+scripts\history_prompts.py
+
+
+# File: scripts\issues.py
+
+
+scripts\issues.py:
+⋮...
+│def has_been_reopened(issue_number):
+⋮...
+│def get_issues(state="open"):
+⋮...
+│def group_issues_by_subject(issues):
+⋮...
+│def find_oldest_issue(subject, all_issues):
+⋮...
+│def comment_and_close_duplicate(issue, oldest_issue):
+⋮...
+│def find_unlabeled_with_paul_comments(issues):
+⋮...
+│def handle_unlabeled_issues(all_issues, auto_yes):
+⋮...
+│def handle_stale_issues(all_issues, auto_yes):
+⋮...
+│def handle_stale_closing(all_issues, auto_yes):
+⋮...
+│def handle_fixed_issues(all_issues, auto_yes):
+⋮...
+│def handle_duplicate_issues(all_issues, auto_yes):
+⋮...
+│def main():
+⋮...
+
+
+# File: scripts\my_models.py
+
+
+scripts\my_models.py:
+⋮...
+│def collect_model_stats(n_lines=1000):
+⋮...
+│def format_text_table(model_stats):
+⋮...
+
+
+# File: scripts\update-history.py
+
+
+scripts\update-history.py:
+⋮...
+│def get_base_version():
+⋮...
+│def run_git_log():
+⋮...
+│def main():
+⋮...
+
+
+# File: scripts\versionbump.py
+
+
+scripts\versionbump.py:
+⋮...
+│def main():
+│    parser = argparse.ArgumentParser(description="Bump version")
+⋮...
+│    def check_branch():
+⋮...
+│    def check_working_directory_clean():
+⋮...
+│    def check_main_branch_up_to_date():
+⋮...
+
+
+# File: scripts\yank-old-versions.py
+
+
+scripts\yank-old-versions.py:
+⋮...
+│def get_versions_supporting_python38_or_lower(package_name):
+⋮...
+│def main():
+⋮...
+
+
+# File: feedcode.py
+
+
+feedcode.py:
+⋮...
+│def num_tokens_from_string(string: str, encoding_name: str = "cl100k_base") -> int:
+⋮...
+│def get_extensions_for_langs(langs_str: str = None) -> list[str]:
+⋮...
+│def process_directory(directory, exclusions, extensions, use_aider=False):
+│    tree = []
+⋮...
+│    def should_exclude(path: Path):
+⋮...
+│    def process_item(item, prefix="", is_last=False):
+⋮...
+│def main(directory, output_file, exclusions, langs, use_aider=False):
+⋮...
+
+
